@@ -133,6 +133,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+if (window.innerHeight < window.outerHeight) {
+    // This works for mobile browsers
+    window.scrollTo(0, 1);
+}
+
+// Additionally, force a resize to ensure the address bar is hidden on some mobile browsers
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        window.scrollTo(0, 1);
+    }, 100);
+});
 
 
 
