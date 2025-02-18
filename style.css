@@ -208,7 +208,7 @@ nav ul li:nth-child(5).active~.indicator {
 }
 
 .right {
-    margin: 50px 100px;
+    margin:50px 100px;
     top: 10%;
     position: relative;
     width: 38.2%;
@@ -719,10 +719,10 @@ nav ul li:nth-child(5).active~.indicator {
     nav
     {
         height: 5rem;
-    };
+    }
     nav ul li{
     width: 55px;
-    height: 55px;
+    /* height: 55px; */
     }
     nav ul li a .text{
         font-size: 0.8em;
@@ -759,16 +759,14 @@ nav ul li:nth-child(5).active~.indicator {
         height: 70px;
     }
     .right{
-        /* margin: 0px; */
+        margin: 0px;
         position:fixed;
-        bottom: 0px;
-        left:0;
-        margin: 0;
+        top:91vh;
         width:100%;
         opacity:0.95;
         background: linear-gradient(90deg, rgba(55, 55, 55), rgba(40, 40, 40));
         z-index: 1000;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 -2px 5px rgba(31, 23, 23, 0.1);
     }
     
     .front_box
@@ -883,9 +881,6 @@ nav ul li:nth-child(5).active~.indicator {
         font-size: 14px;
     }
 
-    .right {
-        top: 88vh;
-    }
 
     .only_mobile {
         width: 30%;
